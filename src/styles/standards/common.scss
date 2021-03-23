@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  min-height: 100%;
+
+  &.is-scroll-none {
+    overflow: hidden;
+    height: 100%;
+
+    body {
+      overflow: hidden;
+      height: 100%;
+    }
+  }
+}
+
+// * {
+// 	-webkit-user-select: none;  /* Chrome all / Safari all */
+//   -moz-user-select: none;     /* Firefox all */
+//   -ms-user-select: none;      /* IE 10+ */
+//   user-select: none;          /* Likely future */
+// }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-size: $body-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $dark;
+  font-weight: 400;
+  line-height: 1.2;
+  min-width: 320px;
+  background: #FFF;
+
+  &.js-block-scroll {
+    overflow-y: hidden;
+  }
+}
+
+th {
+  font-weight: inherit;
+}
+
+// font default
+//-----------------------------------------------------------------------------------
+body,
+input,
+button,
+select,
+textarea {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+// Common classes
+//-----------------------------------------------------------------------------------
+.clear {
+  clear: both;
+}
+
+%clear-fix:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.w-100 {
+  width: 100%;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.app-body {
+  position: relative;
+  padding: 55px 0;
+}
+p {
+  color: $text-color;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+a {
+  color: $blue;
+}
+ul {
+  margin-bottom: 10px;
+
+  li {
+    color: $text-color;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    &::before {
+      display: inline-block;
+      content: "-";
+      margin-right: 5px;
+    }
+  }
+}
+.section-title {
+  color: $text-color;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.section-subtitle {
+  color: $text-color;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

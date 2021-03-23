@@ -1,0 +1,22 @@
+// grid breakpoints
+$grid-breakpoints: ( xs:0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+// grid containers
+$container-max-widths: (md: 991px, lg: 1200px, xl: 1200px);
+
+// grid columns
+$grid-columns: 12 !default;
+$gutter: 20px !default;
+$gutter-xs: 40px !default;
+// font
+$Montserrat: 'Roboto';
+$font-default: sans-serif;
+$body-font-size: 14px;
+// color
+//-----------------------------------------------------------------------------------
+$dark: #000;
+$light: #fff;
+$text-color: #000;
+$dark-gray: #90929a;
+$green: #418741;
+$red: #af3737;
+$blue: #1e8ad9;
